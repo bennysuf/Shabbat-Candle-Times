@@ -3,23 +3,17 @@
 //focus event for #zipCode
 // returns your zmanim
 
-
 // events - click, submit? keyboard? focus, mouseover
+//need to iterate with filter, forEach, or map..
 
 document.addEventListener('DOMContentLoaded', (e) => {
-    const form = document.querySelector('#search')
-form.addEventListener('click', (e) => {
+ document.querySelector('#search').addEventListener('click', (e) => {
     e.preventDefault()
-    // if (e.target.name === 'zipInput') {
-        
-        let txtVal = document.getElementById('zip-input').value 
-        fetch(`https://cors-anywhere.herokuapp.com/https://hebcal.com/shabbat?cfg=json&a=onb=18&zip=${txtVal}`)
-        .then(resp => resp.json())
-        .then(data => console.log(data.items))
-      
-})
-              
-                    // if (e.target.name === 'zipSearch') {
+   
+    let txtVal = document.getElementById('zip-input').value 
+    fetch(`https://cors-anywhere.herokuapp.com/https://hebcal.com/shabbat?cfg=json&a=onb=18&zip=${txtVal}`)
+    .then(resp => resp.json())
+    .then(data => console.log(data.items)
 
             //add mouseover event here?
     
@@ -35,13 +29,10 @@ form.addEventListener('click', (e) => {
         // items[1].title //candle lighting time
 
         // might need to do a .find if Object.value === startsWith("candle lighting").. 
-        //.catch((e) =>
-        //console.log(e))
+    )
+    .catch((e) => console.log(e))
 
-        //need to iterate with filter, forEach, or map..
-
-//     }
-// })
+})
 
 
 // document.addEventListener('focus', (e) => {
