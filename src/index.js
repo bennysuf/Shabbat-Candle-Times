@@ -7,26 +7,25 @@
 // events - click, submit? keyboard? focus, mouseover
 
 document.addEventListener('DOMContentLoaded', (e) => {
-    
-    
-    // document.addEventListener('submit', (e) => {
-        //     console.log(e.target)
-        //     console.log(document.getElementsByName('zipSubmit'))
+    const form = document.querySelector('#search')
+form.addEventListener('click', (e) => {
+    e.preventDefault()
+    // if (e.target.name === 'zipInput') {
         
-        // e.preventDefault?
-        
-        //     if (e.target === document.getElementsByName('zipSubmit')) {
+        let txtVal = document.getElementById('zip-input').value 
+        fetch(`https://cors-anywhere.herokuapp.com/https://hebcal.com/shabbat?cfg=json&a=onb=18&zip=${txtVal}`)
+        .then(resp => resp.json())
+        .then(data => console.log(data))
+      
+})
+              
+                    // if (e.target.name === 'zipSearch') {
 
             //add mouseover event here?
-            // figure out how to take text submitted and make it an argument
-            //try making a function in the event listner and either the submittion would become the argument or give e.target.value a value and use that value to log
-            
-            // fetch(`https://www.hebcal.com/shabbat?cfg=json&a=onb=18geozip=${zipCode}`)
-            // .then(resp => resp.json())
-            // .then(data => console.log(data))
-
+    
             //try again after yom tov to see if the array locations are the same place 
-
+            
+            //create table row element?, then append each response into the table row element
         //location.city 
         //items[0].title //occasion 
         // items[0].date //en date
