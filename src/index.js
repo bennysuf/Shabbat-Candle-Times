@@ -15,7 +15,7 @@ form.addEventListener('click', (e) => {
         let txtVal = document.getElementById('zip-input').value 
         fetch(`https://cors-anywhere.herokuapp.com/https://hebcal.com/shabbat?cfg=json&a=onb=18&zip=${txtVal}`)
         .then(resp => resp.json())
-        .then(data => console.log(data))
+        .then(data => console.log(data.items))
       
 })
               
@@ -34,6 +34,7 @@ form.addEventListener('click', (e) => {
         // items[0].hebrew //name of event in hebrew
         // items[1].title //candle lighting time
 
+        // might need to do a .find if Object.value === startsWith("candle lighting").. 
         //.catch((e) =>
         //console.log(e))
 
