@@ -23,27 +23,24 @@ document.addEventListener('DOMContentLoaded', (e) => {
        td.innerText = location
        tr.append(td)
       
-   return data.items.forEach((e => {
-    let arr = []
-    arr.push(e.title)
-    // console.log(arr)
-   console.log(arr.find(e => e.startsWith("Candle lighting")))
- //data.items === array
- //e.title === string
-// const check = e.title.startsWith("Candle lighting")
-// const str = "Candle"
-// const index = e.title.indexOf(str)
-// console.log(`${index}`)
-const tr2 = document.getElementById('row2')
-if (tr2.querySelector('td')) {
-    tr2.querySelector('td').remove()
-   }
-   const td2 = document.createElement('td')
-//    location = index
-   td2.innerText = //need to get "Candle lighting"
-   tr2.append(td2)
-    })
-    )
+       let arr = []
+   data.items.forEach((e => {
+arr.push(e.title)
+}))
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].startsWith("Candle lighting")) {
+            const tr2 = document.getElementById('row2')
+            if (tr2.querySelector('td')) {
+                tr2.querySelector('td').remove()
+               }
+               const td2 = document.createElement('td')
+               td2.innerText = arr[i]
+               tr2.append(td2)
+               break;
+            }
+            }
+    // })
+    // )
 
     
      
