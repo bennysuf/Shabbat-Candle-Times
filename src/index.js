@@ -13,27 +13,33 @@ document.addEventListener('DOMContentLoaded', (e) => {
     let txtVal = document.getElementById('zip-input').value 
     fetch(`https://cors-anywhere.herokuapp.com/https://hebcal.com/shabbat?cfg=json&a=onb=18&zip=${txtVal}`)
     .then(resp => resp.json())
-    .then(data => console.log(data.items)
-
-            //add mouseover event here?
+    .then(data => { console.log(data.items)
+    console.log('city', data.location.city),
+    console.log('candele lighting',data.items[0].title),
+    console.log('date', data.items[1].date),
+    console.log('hdate', data.items[1].hdate)
+    }
+    //forEach to place into the table? 
     
-            //try again after yom tov to see if the array locations are the same place 
-            
-            //create table row element?, then append each response into the table row element
-        //location.city 
-        //items[0].title //occasion 
-        // items[0].date //en date
-        // items[0].hdate //heb date
-        // items[0].category //event catagory 
-        // items[0].hebrew //name of event in hebrew
-        // items[1].title //candle lighting time
+    //try again after yom tov to see if the array locations are the same place 
+    
+    //create table row element?, then append each response into the table row element
 
-        // might need to do a .find if Object.value === startsWith("candle lighting").. 
+    //location.city 
+    //items[0].title //occasion 
+    // items[0].date //en date
+    // items[0].hdate //heb date
+    // items[0].category //event catagory 
+    // items[0].hebrew //name of event in hebrew
+    // items[1].title //candle lighting time
+    
+    // might need to do a .find if Object.value (or items.title) === startsWith("candle lighting").. 
     )
     .catch((e) => console.log(e))
-
+    
 })
 
+//add mouseover event here?
 
 // document.addEventListener('focus', (e) => {
     //console.log(e.taget(.value?))
