@@ -1,33 +1,4 @@
-/* tbody {
-   display: grid;
-   grid-template-rows: repeat(3, 30px);
-} */
 
-/* #row1 {
-    display: grid;
-    border: 1px solid black;
-    border-radius: 0px;
-}
-
-#row2{
-    display: grid;
-    border: 1px solid black;
-    border-radius: 0px;
-}
-
-#row3 {
-    display: grid;
-    border: 1px solid black;
-    border-radius: 0px;
-}
-
-#row4 {
-    display: grid;
-    border: 1px solid black;
-    border-radius: 0px;
-} */
-
-td,
 th {
     border: 1px solid rgb(190, 190, 190);
     padding: 10px;
@@ -40,20 +11,10 @@ td {
 tr:nth-child(even) {
     background-color: #eee;
 }
-/* 
-th[scope="col"] {
-    background-color: #696969;
-    color: #fff;
-} */
 
 th[class="row"] {
     background-color: #d7d9f2;
 }
-
-/* caption {
-    padding: 10px;
-    caption-side: bottom;
-} */
 
 table {
     border-collapse: collapse;
@@ -62,3 +23,5 @@ table {
     font-family: sans-serif;
     font-size: .8rem;
 }
+
+/* css template copied from developer.mozilla.org then modified */
