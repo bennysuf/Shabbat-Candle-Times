@@ -13,14 +13,33 @@ document.addEventListener('DOMContentLoaded', (e) => {
     let txtVal = document.getElementById('zip-input').value 
     fetch(`https://cors-anywhere.herokuapp.com/https://hebcal.com/shabbat?cfg=json&a=onb=18&zip=${txtVal}`)
     .then(resp => resp.json())
-    .then(data => { console.log(data.items)
-    console.log('city', data.location.city),
-    console.log('candele lighting',data.items[0].title),
-    console.log('date', data.items[1].date),
-    console.log('hdate', data.items[1].hdate)
+    .then(data => { 
+       const tr = document.getElementById('row1')
+       if (tr.querySelector('td')) {
+        tr.querySelector('td').remove()
+       }
+       const td = document.createElement('td')
+       const location = data.location.city
+       td.innerText = location
+       tr.append(td)
+      
+
+       
+       
+
+       
+    
+
+
+       //location i can type, candle lighting i can do a find 
+    // console.log(data.items)
+    // console.log('city', data.location.city),
+    // console.log('candele lighting',data.items[0].title),
+    // console.log('date', data.items[1].date),
+    // console.log('hdate', data.items[1].hdate)
     }
     //forEach to place into the table? 
-    
+
     //try again after yom tov to see if the array locations are the same place 
     
     //create table row element?, then append each response into the table row element
