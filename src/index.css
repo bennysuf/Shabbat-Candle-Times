@@ -6,10 +6,8 @@ th {
 
 td {
     text-align: center;
-}
-
-tr:nth-child(even) {
-    background-color: #eee;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
 }
 
 th[class="row"] {
