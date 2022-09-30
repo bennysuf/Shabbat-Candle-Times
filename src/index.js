@@ -39,51 +39,17 @@ arr.push(e.title)
                break;
             }
             }
-    // })
-    // )
-
-    
-     
-
-       
-    
-
-
-       //location i can type, candle lighting i can do a find 
-    // console.log(data.items)
-    // console.log('city', data.location.city),
-    // console.log('candele lighting',data.items[0].title),
-    // console.log('date', data.items[1].date),
-    // console.log('hdate', data.items[1].hdate)
     }
-    //forEach to place into the table? 
-
-    //try again after yom tov to see if the array locations are the same place 
-    
-    //create table row element?, then append each response into the table row element
-
-    //location.city 
-    //items[0].title //occasion 
-    // items[0].date //en date
-    // items[0].hdate //heb date
-    // items[0].category //event catagory 
-    // items[0].hebrew //name of event in hebrew
-    // items[1].title //candle lighting time
-    
-    // might need to do a .find if Object.value (or items.title) === startsWith("candle lighting").. 
     )
     .catch((e) => console.log(e))
     
 })
 
-//add mouseover event here?
 
-// document.addEventListener('focus', (e) => {
-    //console.log(e.taget(.value?))
-    //console.log(document.getElementsByName("zipInput"))
-    // if (e.target === document.getElementsByName("zipInput")) {
-//   event.target.style.background = 'pink';
-// }, true)
-// } //changes the background color of the form youre typing on
+const test = document.getElementById("search");
+test.addEventListener("mouseenter", (event) => {
+    event.target.style.color = "grey"; 
+    setTimeout(() => {event.target.style.color = ""}, 500)
+})
 
 }) //DOM content loader closing
