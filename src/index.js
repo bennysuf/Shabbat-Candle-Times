@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     e.preventDefault()
    
     let txtVal = document.getElementById('zip-input').value 
+    // console.log(txtVal.length)
     fetch(`https://cors-anywhere.herokuapp.com/https://hebcal.com/shabbat?cfg=json&a=onb=18&zip=${txtVal}`)
     .then(resp => resp.json())
     .then(data => { 
@@ -41,15 +42,15 @@ arr.push(e.title)
             }
     }
     )
-    .catch((e) => console.log(e))
-    
+    .catch((e) => {
+        alert('Error, location not found. Please try again.')
+ })
 })
 
 
-const test = document.getElementById("search");
-test.addEventListener("mouseenter", (event) => {
-    event.target.style.color = "grey"; 
-    setTimeout(() => {event.target.style.color = ""}, 500)
+const test = document.getElementById("search")
+test.addEventListener("mouseover", (event) => {
+        event.target.style.color = "grey"; 
+    setTimeout(() => {event.target.style.color = ""}, 450)
 })
-
 }) //DOM content loader closing
