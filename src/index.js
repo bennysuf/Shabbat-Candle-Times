@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
     e.preventDefault()
    
     let txtVal = document.getElementById('zip-input').value 
-    // console.log(txtVal.length)
     fetch(`https://cors-anywhere.herokuapp.com/https://hebcal.com/shabbat?cfg=json&a=onb=18&zip=${txtVal}`)
     .then(resp => resp.json())
     .then(data => { 

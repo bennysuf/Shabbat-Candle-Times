@@ -22,4 +22,10 @@ table {
     font-size: .8rem;
 }
 
+body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
 /* css template copied from developer.mozilla.org then modified */
