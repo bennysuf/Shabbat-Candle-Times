@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     fetch(`https://cors-anywhere.herokuapp.com/https://hebcal.com/shabbat?cfg=json&a=onb=18&zip=${txtVal}`)
     .then(resp => resp.json())
     .then(data => { 
+
         //Gets the data for the City 
        const tr = document.getElementById('row1')
        if (tr.querySelector('td')) { //Checks if theres a td element input already
@@ -48,6 +49,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 //Changes the color of the Search button when the mouse hovers over it
 document.getElementById("search").addEventListener("mouseover", (event) => {
         event.target.style.color = "grey"; 
-    setTimeout(() => {event.target.style.color = ""}, 450) //Changes the color back after a certain period of time
+    setTimeout(() => {event.target.style.color = ""}, 450) //Resets the color
 })
 }) //DOM content loader closing
