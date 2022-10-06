@@ -2,6 +2,8 @@
 Finding the candle lighting time in your area is just a short click away. 
 
 Simplifying it to just a zipcode and a click, the candle lighting time and location will be displayed. 
+<img width="411" alt="Screen Shot 2022-10-06 at 11 27 04 AM" src="https://user-images.githubusercontent.com/109253075/194392800-44f25d69-0f4a-43a8-ab7e-543afe9afb32.png">
+
 
 Through the API I can grab many different pieces of data from that zipcode, I chose to stick with displaying the area and candle lighting time however there are more pieces of information that can be selected and displayed. 
 
