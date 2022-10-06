@@ -3,6 +3,7 @@ Finding the candle lighting time in your area is just a short click away.
 
 Simplifying it to just a zipcode and a click, the candle lighting time and location will be displayed. 
 Place any zipcode to an American city in the search bar and click "Search"
+
 <img width="411" alt="Screen Shot 2022-10-06 at 11 27 04 AM" src="https://user-images.githubusercontent.com/109253075/194392800-44f25d69-0f4a-43a8-ab7e-543afe9afb32.png">
 
 
