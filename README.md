@@ -14,7 +14,15 @@ Once you click Search, you should get your location and candle lighting time.
 
 <img width="364" src="https://user-images.githubusercontent.com/109253075/194644536-c3af0790-9c0a-4653-9df5-a9ebbe6b9ed6.png">
 
-## Features
+## Hidden features
+
+## Key details
+
+This project only works on American cities and zipcodes.
+
+Due to a CORS error unable to be fixed. I added a proxy website which gives the project access to the API.
+If an error shows up after having entered a valid zipcode, you may have to go on here https://cors-anywhere.herokuapp.com/corsdemo
+click on the button that says "Request tempurary access to the demo server" then reload your page on the project and it should work. 
 
 ## Source
 
@@ -27,6 +35,3 @@ Simplifying it to just a zipcode and a click, the candle lighting time and locat
 Place any zipcode to an American city in the search bar and click "Search"
 
 Through the API I can grab many different pieces of data from that zipcode, I chose to stick with displaying the area and candle lighting time however there are more pieces of information that can be selected and displayed. 
-
-Due to a CORS error unable to be fixed. I added a proxy website which gives the project access to the API.
-If an error shows up after having entered a valid zipcode, you may have to go on here https://cors-anywhere.herokuapp.com/corsdemo and click on the button that gives "Request tempurary access to the demo server" then reload your page on the project and it should work. 
