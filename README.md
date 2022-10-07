@@ -11,7 +11,7 @@ In the search bar, type your zipcode and click the "Search" button
 
 <img width="411" src="https://user-images.githubusercontent.com/109253075/194392800-44f25d69-0f4a-43a8-ab7e-543afe9afb32.png">
 
-Once you click Search, you should get your location and candle lighting time.
+Once you click Search, you will get your location and the candle lighting time.
 
 <img width="364" src="https://user-images.githubusercontent.com/109253075/194644536-c3af0790-9c0a-4653-9df5-a9ebbe6b9ed6.png">
 
@@ -28,7 +28,7 @@ If an error shows up after having entered a valid zipcode, you may have to go on
 
 click on the button that says "Request tempurary access to the demo server" then reload your page on the project and it should work. 
 
-## Source
+## Sources
 
 API source: https://www.hebcal.com/
 
