@@ -1,9 +1,23 @@
 # phase-1-project
-##Who its for 
+<img width="580" src="https://user-images.githubusercontent.com/109253075/194643989-7ad70be6-03fa-42b8-ae64-bf29a545a216.png">
 
-##Usage
-<img width="411" alt="Screen Shot 2022-10-06 at 11 27 04 AM" src="https://user-images.githubusercontent.com/109253075/194392800-44f25d69-0f4a-43a8-ab7e-543afe9afb32.png">
-##Source
+## Who its for 
+In the Jewish world, one is supposed to light candles at sunset on friday afternoon.
+With just a zipcode, this project will tell you the location searched and what time candle lighting is.
+
+## Usage
+In the search bar, type your zipcode and click the "Search" button
+
+<img width="411" src="https://user-images.githubusercontent.com/109253075/194392800-44f25d69-0f4a-43a8-ab7e-543afe9afb32.png">
+
+Once you click Search, you should get your location and candle lighting time.
+
+<img width="364" src="https://user-images.githubusercontent.com/109253075/194644536-c3af0790-9c0a-4653-9df5-a9ebbe6b9ed6.png">
+
+## Features
+
+## Source
+
 API source: https://www.hebcal.com/
 IMG source: https://www.chabad.org/
 
