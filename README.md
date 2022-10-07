@@ -3,6 +3,7 @@
 
 ## Who its for 
 In the Jewish world, one is supposed to light candles at sunset on friday afternoon.
+
 With just a zipcode, this project will tell you the location searched and what time candle lighting is.
 
 ## Usage
@@ -24,6 +25,7 @@ This project only works on American cities and zipcodes.
 
 Due to a CORS error unable to be fixed. I added a proxy website which gives the project access to the API.
 If an error shows up after having entered a valid zipcode, you may have to go on here https://cors-anywhere.herokuapp.com/corsdemo
+
 click on the button that says "Request tempurary access to the demo server" then reload your page on the project and it should work. 
 
 ## Source
