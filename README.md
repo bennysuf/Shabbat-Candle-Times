@@ -24,9 +24,9 @@ Hovering over the Search button will change the color tempurarily.
 This project only works on American cities and zipcodes.
 
 Due to a CORS error unable to be fixed. I added a proxy website which gives the project access to the API.
-If an error shows up after having entered a valid zipcode, you may have to go on here https://cors-anywhere.herokuapp.com/corsdemo
+If an error shows up after having entered a valid zipcode, you may have to go to this site https://cors-anywhere.herokuapp.com/corsdemo
 
-click on the button that says "Request tempurary access to the demo server" then reload your page on the project and it should work. 
+On the site, click on the button that says "Request tempurary access to the demo server" then reload your page on the project and it should work. 
 
 ## Sources
 
