@@ -16,6 +16,8 @@ Once you click Search, you should get your location and candle lighting time.
 
 ## Hidden features
 
+Hovering over the Search button will change the color tempurarily.
+
 ## Key details
 
 This project only works on American cities and zipcodes.
@@ -27,11 +29,9 @@ click on the button that says "Request tempurary access to the demo server" then
 ## Source
 
 API source: https://www.hebcal.com/
+
 IMG source: https://www.chabad.org/
 
-Finding the candle lighting time in your area is just a short click away. 
+## API information
 
-Simplifying it to just a zipcode and a click, the candle lighting time and location will be displayed. 
-Place any zipcode to an American city in the search bar and click "Search"
-
-Through the API I can grab many different pieces of data from that zipcode, I chose to stick with displaying the area and candle lighting time however there are more pieces of information that can be selected and displayed. 
+Through the API I can grab many different pieces of data using a zipcode, there are more pieces of information that can be selected and displayed. However, I chose to stick with displaying the area and candle lighting time. 
