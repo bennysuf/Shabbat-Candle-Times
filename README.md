@@ -1,4 +1,4 @@
-# phase-1-project
+# Shabbat Candle Times
 <img width="580" src="https://user-images.githubusercontent.com/109253075/194643989-7ad70be6-03fa-42b8-ae64-bf29a545a216.png">
 
 ## Who its for 
